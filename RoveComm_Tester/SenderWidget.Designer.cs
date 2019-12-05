@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.MoveUp_pb = new System.Windows.Forms.Button();
-            this.MoveDown_pb = new System.Windows.Forms.Button();
-            this.Dubplicate_tb = new System.Windows.Forms.Button();
-            this.Number_lb = new System.Windows.Forms.Label();
-            this.Add_pb = new System.Windows.Forms.Button();
+            this.Send_pb = new System.Windows.Forms.Button();
             this.Delete_pb = new System.Windows.Forms.Button();
+            this.Add_pb = new System.Windows.Forms.Button();
+            this.MoveDown_pb = new System.Windows.Forms.Button();
+            this.Number_lb = new System.Windows.Forms.Label();
+            this.Dubplicate_tb = new System.Windows.Forms.Button();
+            this.MoveUp_pb = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Settings_pb = new System.Windows.Forms.Button();
-            this.Send_pb = new System.Windows.Forms.Button();
             this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,15 +71,36 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(486, 58);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
-            // MoveUp_pb
+            // Send_pb
             // 
-            this.MoveUp_pb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MoveUp_pb.Location = new System.Drawing.Point(179, 3);
-            this.MoveUp_pb.Name = "MoveUp_pb";
-            this.MoveUp_pb.Size = new System.Drawing.Size(38, 38);
-            this.MoveUp_pb.TabIndex = 2;
-            this.MoveUp_pb.Text = "^";
-            this.MoveUp_pb.UseVisualStyleBackColor = true;
+            this.Send_pb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Send_pb.Location = new System.Drawing.Point(401, 3);
+            this.Send_pb.Name = "Send_pb";
+            this.Send_pb.Size = new System.Drawing.Size(82, 38);
+            this.Send_pb.TabIndex = 10;
+            this.Send_pb.Text = "Send";
+            this.Send_pb.UseVisualStyleBackColor = true;
+            // 
+            // Delete_pb
+            // 
+            this.Delete_pb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Delete_pb.Location = new System.Drawing.Point(3, 3);
+            this.Delete_pb.Name = "Delete_pb";
+            this.Delete_pb.Size = new System.Drawing.Size(38, 38);
+            this.Delete_pb.TabIndex = 7;
+            this.Delete_pb.Text = "X";
+            this.Delete_pb.UseVisualStyleBackColor = true;
+            this.Delete_pb.Click += new System.EventHandler(this.Delete_pb_Click);
+            // 
+            // Add_pb
+            // 
+            this.Add_pb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Add_pb.Location = new System.Drawing.Point(91, 3);
+            this.Add_pb.Name = "Add_pb";
+            this.Add_pb.Size = new System.Drawing.Size(38, 38);
+            this.Add_pb.TabIndex = 6;
+            this.Add_pb.Text = "+";
+            this.Add_pb.UseVisualStyleBackColor = true;
             // 
             // MoveDown_pb
             // 
@@ -90,16 +111,6 @@
             this.MoveDown_pb.TabIndex = 3;
             this.MoveDown_pb.Text = "V";
             this.MoveDown_pb.UseVisualStyleBackColor = true;
-            // 
-            // Dubplicate_tb
-            // 
-            this.Dubplicate_tb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Dubplicate_tb.Location = new System.Drawing.Point(135, 3);
-            this.Dubplicate_tb.Name = "Dubplicate_tb";
-            this.Dubplicate_tb.Size = new System.Drawing.Size(38, 38);
-            this.Dubplicate_tb.TabIndex = 4;
-            this.Dubplicate_tb.Text = "D";
-            this.Dubplicate_tb.UseVisualStyleBackColor = true;
             // 
             // Number_lb
             // 
@@ -112,25 +123,25 @@
             this.Number_lb.Text = "1.";
             this.Number_lb.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Add_pb
+            // Dubplicate_tb
             // 
-            this.Add_pb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Add_pb.Location = new System.Drawing.Point(91, 3);
-            this.Add_pb.Name = "Add_pb";
-            this.Add_pb.Size = new System.Drawing.Size(38, 38);
-            this.Add_pb.TabIndex = 6;
-            this.Add_pb.Text = "+";
-            this.Add_pb.UseVisualStyleBackColor = true;
+            this.Dubplicate_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Dubplicate_tb.Location = new System.Drawing.Point(135, 3);
+            this.Dubplicate_tb.Name = "Dubplicate_tb";
+            this.Dubplicate_tb.Size = new System.Drawing.Size(38, 38);
+            this.Dubplicate_tb.TabIndex = 4;
+            this.Dubplicate_tb.Text = "D";
+            this.Dubplicate_tb.UseVisualStyleBackColor = true;
             // 
-            // Delete_pb
+            // MoveUp_pb
             // 
-            this.Delete_pb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Delete_pb.Location = new System.Drawing.Point(3, 3);
-            this.Delete_pb.Name = "Delete_pb";
-            this.Delete_pb.Size = new System.Drawing.Size(38, 38);
-            this.Delete_pb.TabIndex = 7;
-            this.Delete_pb.Text = "X";
-            this.Delete_pb.UseVisualStyleBackColor = true;
+            this.MoveUp_pb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MoveUp_pb.Location = new System.Drawing.Point(179, 3);
+            this.MoveUp_pb.Name = "MoveUp_pb";
+            this.MoveUp_pb.Size = new System.Drawing.Size(38, 38);
+            this.MoveUp_pb.TabIndex = 2;
+            this.MoveUp_pb.Text = "^";
+            this.MoveUp_pb.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -152,16 +163,6 @@
             this.Settings_pb.TabIndex = 9;
             this.Settings_pb.Text = "O";
             this.Settings_pb.UseVisualStyleBackColor = true;
-            // 
-            // Send_pb
-            // 
-            this.Send_pb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Send_pb.Location = new System.Drawing.Point(401, 3);
-            this.Send_pb.Name = "Send_pb";
-            this.Send_pb.Size = new System.Drawing.Size(82, 38);
-            this.Send_pb.TabIndex = 10;
-            this.Send_pb.Text = "Send";
-            this.Send_pb.UseVisualStyleBackColor = true;
             // 
             // SenderWidget
             // 

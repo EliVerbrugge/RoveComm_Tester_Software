@@ -15,14 +15,22 @@ namespace RoveComm_Tester
         public SenderWidget()
         {
             InitializeComponent();
+
+            this.TopLevel = false;
+
+            this.Show();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Delete_pb_Click(object sender, EventArgs e)
         {
 
         }
