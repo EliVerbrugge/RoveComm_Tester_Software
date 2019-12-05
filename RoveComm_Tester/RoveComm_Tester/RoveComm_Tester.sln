@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoveComm_Tester", "RoveComm_Tester\RoveComm_Tester.csproj", "{6732929E-672F-492D-97C0-FDD84C368DCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6732929E-672F-492D-97C0-FDD84C368DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6732929E-672F-492D-97C0-FDD84C368DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6732929E-672F-492D-97C0-FDD84C368DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6732929E-672F-492D-97C0-FDD84C368DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B4A4C92-2D39-4251-8144-545A94CC5938}
+	EndGlobalSection
+EndGlobal
