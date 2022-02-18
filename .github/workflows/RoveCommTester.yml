@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          submodules: "true"
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
@@ -33,7 +33,7 @@ jobs:
       - name: Zip dist
         run: |
           cd RoveComm_Tester
-          tar -cvzf RoveComm_Tester.zip -C /dist/
+          Compress-Archive dist\* RoveComm_Tester.zip -Force
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
