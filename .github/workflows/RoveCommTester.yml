@@ -33,7 +33,7 @@ jobs:
       - name: Zip dist
         run: |
           cd RoveComm_Tester
-          tar.exe -a -c -f RoveComm_Tester.zip dist/
+          tar -cvzf RoveComm_Tester.zip -C /dist/
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -41,4 +41,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            RoveComm_Tester/RoveComm_Tester.zip
+            .\RoveComm_Tester\RoveComm_Tester.zip
