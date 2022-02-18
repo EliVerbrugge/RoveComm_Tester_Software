@@ -30,19 +30,15 @@ jobs:
         run: |
           cd RoveComm_Tester
           pyinstaller -F --icon=rover_swoosh.ico RoveComm_Tester.py
-      - name: Export Release Timestamp
+      - name: Zip dist
         run: |
-          cd ..
-          echo "APP_VERSION=release_$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-      - name: set env
-        run: |
-          cd ..
-          echo "RELEASE_NAME=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-      - name: Release Apps
-        uses: ncipollo/release-action@v1
+          cd RoveComm_Tester
+          tar.exe -a -c -f RoveComm_Tester.zip dist/
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          tag: ${{ env.APP_VERSION }}
-          commit: "master"
-          name: ${{ env.RELEASE_NAME }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: "./RoveComm_Tester/dist/RoveComm_Tester.exe"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            RoveComm_Tester/RoveComm_Tester.zip
