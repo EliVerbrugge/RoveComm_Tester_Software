@@ -41,4 +41,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            .\RoveComm_Tester\RoveComm_Tester.zip
+            RoveComm_Tester/RoveComm_Tester.zip
