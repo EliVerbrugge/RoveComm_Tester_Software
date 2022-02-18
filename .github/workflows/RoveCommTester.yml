@@ -44,6 +44,6 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: true
-          title: "${{ env:name }}"
+          title: ${{ env.name }}
           files: |
             RoveComm_Tester/RoveComm_Tester.zip
