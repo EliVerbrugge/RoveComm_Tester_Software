@@ -43,7 +43,7 @@ jobs:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          title: "${{ env.name }}"
           automatic_release_tag: "latest"
+          title: "${{ env.name }}"
           files: |
             RoveComm_Tester/RoveComm_Tester.zip
